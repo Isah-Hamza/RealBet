@@ -1,6 +1,8 @@
 const sliderContainer = document.querySelector(".slider-container");
-const nextSlick = document.querySelector(".slick-next");
-const prevSlick = document.querySelector(".slick-prev");
+const menuBtn = document.querySelector("[data-menu]");
+const closeBtn = document.querySelector("[data-close]");
+const nav = document.querySelector('.nav')
+
 $(".slider-container").slick({
   dots: false,
   infinite: true,
@@ -8,15 +10,23 @@ $(".slider-container").slick({
   fade: true,
   cssEase: "linear",
   autoplay: true,
-  autoplaySpeed: 500,
+  autoplaySpeed: 1000,
 });
 
-const customAutoplay = () => {
-  setInterval(() => {
-    nextSlick.click();
-  }, 500);
-};
+$(".sponsor-slider-container").slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  cssEase: "linear",
+  autoplay: true,
+  slidesToShow: 5,
+  autoplaySpeed: 1000,
+});
 
-customAutoplay()
+menuBtn.addEventListener('click', () => {
+  nav.classList.remove('hide-nav')
+})
 
-console.log(sliderContainer);
+closeBtn.addEventListener('click', () => {
+  nav.classList.add('hide-nav')
+})

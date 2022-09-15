@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens:{
+        'desktop-md': '992px',
+      },
       colors:{
         textColor:"#f3f4f5",
         yellowColor:"#e1ff57",
