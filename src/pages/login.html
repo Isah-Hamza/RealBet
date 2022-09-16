@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../dist/css/output.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@400&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Real Bet | Login</title>
+</head>
+
+<body class="font-Montserrat">
+    <div class="login-container grid desktop-md:grid-cols-2 h-screen bg-black">
+        <div class="empty-container hidden desktop-md:block relative">
+            <img class="absolute left-0 top-0 w-full h-full object-cover" src="../images/hero3.jpg" alt="">
+            <div class="container absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
+        </div>
+        <form class="bg-[#f3f4f5] mx-auto h-screen flex flex-col w-full px-5 md:px-10 lg:px-20 py-7 overflow-auto">
+            <div class="header flex justify-between items-center">
+                <div class="">
+                    <a class="flex items-center gap-1" href="../index.html">
+                        <i class="fas fa-home"></i>
+                        <p class="text-lg font-semibold">RealBet</p>
+                    </a>
+                </div>
+                <p class="underline text-sm hover:no-underline"> <a href="./register.html"> Create Account</a></p>
+            </div>
+            <div class="main-content grow flex flex-col justify-center items-center mt-16">
+                <p class="text-xl font-bold">Log Into RealBet</p>
+                <div class="flex flex-col mt-10">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-1">
+                            <label class="text-base font-medium" for="email">Email</label>
+                            <input autocomplete="new-password"
+                                class=" w-[30vw] min-w-[325px] max-w-[400px] border border-saddleBrown px-4 py-3 outline-none rounded"
+                                type="email" id="email">
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="flex items-center justify-between">
+                                <label class="text-base font-medium" for="password">Password</label>
+                                <p class="text-sm font-semibold cursor-pointer text-green-900">
+                                    <a href="./forgotpassword.html">Forgot Password?</a>
+                                </p>
+                            </div>
+                            <input
+                                class="w-[30vw] min-w-[325px] max-w-[400px] border border-saddleBrown px-4 py-3 outline-none rounded"
+                                type="password" id="password">
+                        </div>
+                        <button
+                            class="rounded bg-saddleBrown py-3 text-white h-[55px] text-base font-semibold">Login</button>
+                    </div>
+                    <div class="flex items-center gap-1 my-10">
+                        <div class="grow h-[1px] bg-saddleBrown"></div>
+                        <p class="text-center uppercase font-semibold">Or</p>
+                        <div class="grow h-[1px] bg-saddleBrown"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <button
+                            class="rounded h-[55px] bg-saddleBrown/90 text-white px-4 flex gap-5 justify-center items-center py-3">
+                            <img class="w-6" src="../images/icons8-google-48.png" alt="Google">
+                            <p>Continue With Google</p>
+                        </button>
+                        <button
+                            class="rounded h-[55px] bg-saddleBrown/90 text-white px-4 flex gap-5 justify-center items-center py-3">
+                            <img class="w-7" src="../images/icons8-apple-64.png" alt="apple">
+                            <p>Continue With Apple</p>
+                        </button>
+                        <!-- <button class="flex gap-5 items-center py-3">
+                            <img class="w-6" src="../images/icons8-facebook-48.png" alt="facebook">
+                            <p>Continue With Facebook</p>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

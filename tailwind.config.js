@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./src/pages/**/*.{html,js}"],
   theme: {
     extend: {
       screens:{
@@ -9,6 +9,7 @@ module.exports = {
       colors:{
         textColor:"#f3f4f5",
         yellowColor:"#e1ff57",
+        saddleBrown:"saddlebrown",
       },
       fontFamily:{
         'Montserrat':['Montserrat', 'ui-sans-serif'],
