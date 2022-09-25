@@ -1,3 +1,6 @@
+* {
+  font-family: "Josefin Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 aside ul li:hover {
   cursor: pointer;
 }
@@ -34,4 +37,38 @@ aside ul li:hover {
 
 .hide {
   display: none !important;
+}
+
+/* .left::-webkit-scrollbar,
+.center::-webkit-scrollbar, */
+::-webkit-scrollbar {
+  width: 7px;
+  /* scrollbar-width: 5px; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.active-tab {
+  background-color: white;
+  color: black;
 }
