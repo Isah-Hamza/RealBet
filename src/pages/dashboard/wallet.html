@@ -29,7 +29,7 @@
             <div class="flex justify-between items-center h-full px-3 sm:px-5 md:px-10 text-white">
                 <div class="flex items-center gap-3">
                     <p class="text-2xl sm:text-3xl font-semibold cursor-pointer">RealBet</p>
-                    <p class="text-sm font-semibold mt-1"> > <span>&nbsp;</span> Profile</p>
+                    <p class="text-sm font-semibold mt-1"> > <span>&nbsp;</span> Wallet</p>
                 </div>
                 <div class="flex gap-14 items-center">
                     <div class="flex items-center gap-5">
@@ -116,12 +116,9 @@
                                         alt='market ' />
                                     <p>Market List</p>
                                 </li>
-                                <li>
-                                    <a href="./wallet.html"
-                                        class="hover:bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
-                                        <img class="w-6 h-6" src="../../images/icons8-dollar-coin-50.png" alt='purse' />
-                                        <p>My Purse</p>
-                                    </a>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
+                                    <img class="w-6 h-6" src="../../images/icons8-dollar-coin-50.png" alt='purse' />
+                                    <p>My Purse</p>
                                 </li>
                                 <li>
                                     <a href="./profile.html"
@@ -197,91 +194,122 @@
                     <div class="mb-5">
                         <div
                             class="header rounded-t-md bg-[#2b2b2b] h-12 flex items-center justify-between cursor-pointer px-3">
-                            <p class="text-lg font-semibold text-center text-white">Personal Info.</p>
+                            <p class="text-lg font-semibold text-center text-white">My Wallet</p>
                             <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
                         </div>
                         <div class="bg-white shadow rounded-b-md py-5 pt-10 px-5 grid gap-7">
-                            <div class="grid grid-cols-2 gap-5">
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">First
-                                        Name</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
+                            <div class="bg-[coral]/40 p-5 flex justify-between items-center">
+                                <div class="flex flex-col ">
+                                    <p class="font-semibold text-sm">NGN <span class="text-lg"> 51,400</span></p>
+                                    <p class="text-sm">Current Account Balance</p>
                                 </div>
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Last
-                                        Name</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
-                                </div>
+                                <button
+                                    class="flex items-center gap-2 px-6 py-3 bg-white shadow hover:shadow-md text-sm rounded-md">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    Add Money to Account
+                                </button>
                             </div>
-                            <div class="relative">
-                                <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="email">
-                                    Email</label>
-                                <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]" type="email">
-                            </div>
-                            <div class="grid grid-cols-2 gap-5">
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Phone
-                                        Number</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
-                                </div>
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                        for="first_name">Referral Code</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
-                                </div>
-                            </div>
-                            <button class="block py-3 px-6 text-xs text-white bg-[#199ae0]">
-                                <span class="font-semibold"><i class="fas fa-save text-sm mr-1"></i></span> Save Changes
-                            </button>
                         </div>
                     </div>
                     <div class="mt-10">
                         <div
                             class="header rounded-t-md bg-[#2b2b2b] h-12 flex items-center justify-between cursor-pointer px-3">
-                            <p class="text-lg font-semibold text-center text-white">Security Info.</p>
+                            <p class="text-lg font-semibold text-center text-white">Recent Transaction History</p>
                             <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
                         </div>
                         <div class="bg-white shadow rounded-b-md py-5 pt-10 px-5 grid gap-7">
-                            <div class="grid grid-cols-2 gap-5">
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                        for="first_name">Verification Code</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
-                                </div>
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                        for="first_name">OTP</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
+                            <table class="text-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">S/N</th>
+                                        <th class="text-left">Trans. ID</th>
+                                        <th class="text-left">Type</th>
+                                        <th class="text-left">Amount</th>
+                                        <th class="text-left">Date / Time</th>
+                                        <th class="text-left">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-2">1</td>
+                                        <td>760QR40</td>
+                                        <td>
+                                            <div class="flex items-center gap-2 ">
+                                                <div
+                                                    class="grid place-content-center rounded-full w-5 h-5 bg-green-500 text-white">
+                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                        alt="right arrow">
+                                                </div>
+                                                <p>Deposit</p>
+                                            </div>
+                                        </td>
+                                        <td>₦12,000</td>
+                                        <td>23/11/2020</td>
+                                        <td>Succesful</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2">2</td>
+                                        <td>A09HJ31</td>
+                                        <td>
+                                            <div class="flex items-center gap-2 ">
+                                                <div
+                                                    class="grid place-content-center rounded-full w-5 h-5 bg-red-500 text-white">
+                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                        alt="right arrow">
+                                                </div>
+                                                <p>Withdrawal</p>
+                                            </div>
+                                        </td>
+                                        <td>₦20,000</td>
+                                        <td>10/10/2020</td>
+                                        <td>Rejected</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2">3</td>
+                                        <td>AAA987C</td>
+                                        <td>
+                                            <div class="flex items-center gap-2 ">
+                                                <div
+                                                    class="grid place-content-center rounded-full w-5 h-5 bg-red-500 text-white">
+                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                        alt="right arrow">
+                                                </div>
+                                                <p>Tax</p>
+                                            </div>
+                                        </td>
+                                        <td>₦1,100</td>
+                                        <td>01/12/2022</td>
+                                        <td>Successful</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2">3</td>
+                                        <td>45HQ101</td>
+                                        <td>
+                                            <div class="flex items-center gap-2 ">
+                                                <div
+                                                    class="grid place-content-center rounded-full w-5 h-5 bg-green-500 text-white">
+                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                        alt="right arrow">
+                                                </div>
+                                                <p>Refer</p>
+                                            </div>
+                                        </td>
+                                        <td>₦5,000</td>
+                                        <td>06/08/2022</td>
+                                        <td>Successful</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex items-center justify-between">
+                                <p>showing <span class="font-semibold">1</span> to <span class="font-semibold">3</span>
+                                    of <span class="font-semibold">3</span> </p>
+                                <div class="flex gap-2">
+                                    <img class="cursor-pointer w-4 h-4 rotate-90 origin-center"
+                                        src="../../images/icons8-sort-down-48.png" alt="">
+                                    <img class="cursor-pointer w-4 h-4 -rotate-90"
+                                        src="../../images/icons8-sort-down-48.png" alt="" />
                                 </div>
                             </div>
-                            <div class="relative">
-                                <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="email">
-                                    Password</label>
-                                <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]" type="email">
-                            </div>
-                            <div class="grid grid-cols-2 gap-5">
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Secret
-                                        Question</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
-                                </div>
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Secret
-                                        Answer</label>
-                                    <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                        type="text">
-                                </div>
-                            </div>
-                            <button class="block py-3 px-6 text-xs text-white bg-[#199ae0]">
-                                <span class="font-semibold"><i class="fas fa-save text-sm mr-1"></i></span> Save Changes
-                            </button>
                         </div>
                     </div>
                 </div>
