@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="main-container w-full min-h-screen bg-[#b7b7b7]">
+    <div class="main-container w-full min-h-screen bg-[#b7b7b7] wallet">
         <header class="shadow-md h-20 w-full bg-[#2b2b2b]">
             <div class="flex justify-between items-center h-full px-3 sm:px-5 md:px-10 text-white">
                 <div class="flex items-center gap-3">
@@ -116,9 +116,17 @@
                                         alt='market ' />
                                     <p>Market List</p>
                                 </li>
-                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
-                                    <img class="w-6 h-6" src="../../images/icons8-dollar-coin-50.png" alt='purse' />
-                                    <p>My Purse</p>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b ">
+                                    <a href="./referral.html" class="flex items-center gap-5">
+                                        <img class="w-6 h-6" src="../../images/icons8-gift-64.png" alt='market ' />
+                                        <p>Referrals</p>
+                                    </a>
+                                </li>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b">
+                                    <a href="./wallet.html" class=" flex items-center gap-5">
+                                        <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
+                                        <p>My Purse</p>
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="./profile.html"
@@ -198,7 +206,8 @@
                             <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
                         </div>
                         <div class="bg-white shadow rounded-b-md py-5 pt-10 px-5 grid gap-5">
-                            <div class="bg-[coral]/40 p-5 flex justify-between items-center">
+                            <div
+                                class="bg-[coral]/40 p-5 flex text-center sm:text-left gap-4 sm:flex-row flex-col justify-between items-center">
                                 <div class="flex flex-col ">
                                     <p class="font-semibold text-sm">NGN <span class="text-lg"> 51,400</span></p>
                                     <p class="text-sm">Current Account Balance</p>
@@ -209,7 +218,8 @@
                                     Add Money to Account
                                 </button>
                             </div>
-                            <div class="bg-[coral]/40 p-5 flex justify-between items-center">
+                            <div
+                                class="bg-[coral]/40 p-5 flex text-center sm:text-left gap-4 sm:flex-row flex-col justify-between items-center">
                                 <div class="flex flex-col ">
                                     <p class="font-semibold text-sm">NGN <span class="text-lg"> 31,800</span></p>
                                     <p class="text-sm">Withdrawable Balance</p>
@@ -228,92 +238,94 @@
                             <p class="text-lg font-semibold text-center text-white">Recent Transaction History</p>
                             <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
                         </div>
-                        <div class="bg-white shadow rounded-b-md py-5 pt-10 px-5 grid gap-7">
-                            <table class="text-sm">
-                                <thead>
-                                    <tr>
-                                        <th class="text-left">S/N</th>
-                                        <th class="text-left">Trans. ID</th>
-                                        <th class="text-left">Type</th>
-                                        <th class="text-left">Amount</th>
-                                        <th class="text-left">Date / Time</th>
-                                        <th class="text-left">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2">1</td>
-                                        <td>760QR40</td>
-                                        <td>
-                                            <div class="flex items-center gap-2 ">
-                                                <div
-                                                    class="grid place-content-center rounded-full w-5 h-5 bg-green-500 text-white">
-                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
-                                                        alt="right arrow">
+                        <div class="bg-white shadow rounded-b-md py-5 pt-10 px-5 grid gap-2">
+                            <div class="overflow-x-auto pb-4">
+                                <table class="text-sm whitespace-nowrap w-full">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left">S/N</th>
+                                            <th class="text-left">Trans. ID</th>
+                                            <th class="text-left">Type</th>
+                                            <th class="text-left">Amount</th>
+                                            <th class="text-left">Date / Time</th>
+                                            <th class="text-left">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-2">1</td>
+                                            <td>760QR40</td>
+                                            <td>
+                                                <div class="flex items-center gap-2 ">
+                                                    <div
+                                                        class="grid place-content-center rounded-full w-5 h-5 bg-green-500 text-white">
+                                                        <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                            alt="right arrow">
+                                                    </div>
+                                                    <p>Deposit</p>
                                                 </div>
-                                                <p>Deposit</p>
-                                            </div>
-                                        </td>
-                                        <td>₦12,000</td>
-                                        <td>23/11/2020</td>
-                                        <td>Succesful</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2">2</td>
-                                        <td>A09HJ31</td>
-                                        <td>
-                                            <div class="flex items-center gap-2 ">
-                                                <div
-                                                    class="grid place-content-center rounded-full w-5 h-5 bg-red-500 text-white">
-                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
-                                                        alt="right arrow">
+                                            </td>
+                                            <td>₦12,000</td>
+                                            <td>23/11/2020</td>
+                                            <td>Succesful</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2">2</td>
+                                            <td>A09HJ31</td>
+                                            <td>
+                                                <div class="flex items-center gap-2 ">
+                                                    <div
+                                                        class="grid place-content-center rounded-full w-5 h-5 bg-red-500 text-white">
+                                                        <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                            alt="right arrow">
+                                                    </div>
+                                                    <p>Withdrawal</p>
                                                 </div>
-                                                <p>Withdrawal</p>
-                                            </div>
-                                        </td>
-                                        <td>₦20,000</td>
-                                        <td>10/10/2020</td>
-                                        <td>Rejected</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2">3</td>
-                                        <td>AAA987C</td>
-                                        <td>
-                                            <div class="flex items-center gap-2 ">
-                                                <div
-                                                    class="grid place-content-center rounded-full w-5 h-5 bg-red-500 text-white">
-                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
-                                                        alt="right arrow">
+                                            </td>
+                                            <td>₦20,000</td>
+                                            <td>10/10/2020</td>
+                                            <td>Rejected</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2">3</td>
+                                            <td>AAA987C</td>
+                                            <td>
+                                                <div class="flex items-center gap-2 ">
+                                                    <div
+                                                        class="grid place-content-center rounded-full w-5 h-5 bg-red-500 text-white">
+                                                        <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                            alt="right arrow">
+                                                    </div>
+                                                    <p>Tax</p>
                                                 </div>
-                                                <p>Tax</p>
-                                            </div>
-                                        </td>
-                                        <td>₦1,100</td>
-                                        <td>01/12/2022</td>
-                                        <td>Successful</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2">4</td>
-                                        <td>45HQ101</td>
-                                        <td>
-                                            <div class="flex items-center gap-2 ">
-                                                <div
-                                                    class="grid place-content-center rounded-full w-5 h-5 bg-green-500 text-white">
-                                                    <img class="w-3" src="../../images/icons8-right-arrow-48.png"
-                                                        alt="right arrow">
+                                            </td>
+                                            <td>₦1,100</td>
+                                            <td>01/12/2022</td>
+                                            <td>Successful</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2">4</td>
+                                            <td>45HQ101</td>
+                                            <td>
+                                                <div class="flex items-center gap-2 ">
+                                                    <div
+                                                        class="grid place-content-center rounded-full w-5 h-5 bg-green-500 text-white">
+                                                        <img class="w-3" src="../../images/icons8-right-arrow-48.png"
+                                                            alt="right arrow">
+                                                    </div>
+                                                    <p>Refer</p>
                                                 </div>
-                                                <p>Refer</p>
-                                            </div>
-                                        </td>
-                                        <td>₦5,000</td>
-                                        <td>06/08/2022</td>
-                                        <td>Pending</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                            </td>
+                                            <td>₦5,000</td>
+                                            <td>06/08/2022</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <div class="flex items-center justify-between">
-                                <p>showing <span class="font-semibold">1</span> to <span class="font-semibold">3</span>
-                                    of <span class="font-semibold">3</span> </p>
+                                <p>showing <span class="font-semibold">1</span> to <span class="font-semibold">4</span>
+                                    of <span class="font-semibold">4</span> entries </p>
                                 <div class="flex gap-2">
                                     <img class="cursor-pointer w-4 h-4 rotate-90 origin-center"
                                         src="../../images/icons8-sort-down-48.png" alt="">

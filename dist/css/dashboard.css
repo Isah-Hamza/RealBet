@@ -39,36 +39,52 @@ aside ul li:hover {
   display: none !important;
 }
 
-/* .left::-webkit-scrollbar,
-.center::-webkit-scrollbar, */
-::-webkit-scrollbar {
-  width: 7px;
-  /* scrollbar-width: 5px; */
-}
+@media screen and (min-width: 1000px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+    /* scrollbar-width: 5px; */
+  }
 
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 .active-tab {
   background-color: white;
   color: black;
+}
+
+.wallet table td,
+.wallet table th {
+  padding-right: 15px;
+}
+
+.wallet table tbody tr td:first-child {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .wallet table tbody tr td:first-child {
+    text-align: center;
+    padding-left: 0px;
+  }
 }
