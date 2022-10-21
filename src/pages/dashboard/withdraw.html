@@ -20,7 +20,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../../dist/css/output.css">
     <link rel="stylesheet" href="../../../dist/css/dashboard.css">
-    <title>Dashbaord | Deposit</title>
+    <title>Dashbaord | Withdraw</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <div class="flex justify-between items-center h-full px-3 sm:px-5 md:px-10 text-white">
                 <div class="flex items-center gap-3">
                     <p class="text-2xl sm:text-3xl font-semibold cursor-pointer">RealBet</p>
-                    <p class="text-sm font-semibold mt-1"> > <span>&nbsp;</span> Deposit</p>
+                    <p class="text-sm font-semibold mt-1"> > <span>&nbsp;</span> Withdraw</p>
                 </div>
                 <div class="flex gap-14 items-center">
                     <div class="flex items-center gap-5">
@@ -163,23 +163,16 @@
                     class="mobile-buttom-menu block md:hidden fixed z-10 bottom-0 left-0 w-full rounded-t-md bg-black text-white overflow-hidden">
                     <ul class="flex justify-between">
                         <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <a href="./index.html">
-                                <img class="w-6 h-6" src="../../images/icons8-dashboard-layout-50.png"
-                                    alt='dashboard' />
-                                <p>Dashboard</p>
-                            </a>
+                            <img class="w-6 h-6" src="../../images/icons8-dashboard-layout-50.png" alt='dashboard' />
+                            <p>Dashboard</p>
                         </li>
                         <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <a href="./market-listing.html">
-                                <img class="w-6 h-6" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
-                                <p>Market</p>
-                            </a>
+                            <img class="w-6 h-6" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
+                            <p>Market</p>
                         </li>
                         <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <a href="./wallet.html">
-                                <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
-                                <p>Wallet</p>
-                            </a>
+                            <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
+                            <p>Wallet</p>
                         </li>
                         <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
                             <img class="w-6 h-6" src="../../images/icons8-user-50.png" alt='user profile' />
@@ -211,97 +204,105 @@
                     <div class="mb-5">
                         <div
                             class="header rounded-t-md bg-[#2b2b2b] h-12 flex items-center justify-between cursor-pointer px-3">
-                            <p class="text-lg font-semibold text-center text-white">Make Deposit</p>
+                            <p class="text-lg font-semibold text-center text-white">Withdraw From Account</p>
                             <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
                         </div>
-                        <div class="bg-white shadow rounded-b-md px-5 pb-10">
-                            <div class="credit/debit-card py-5 pt-10 grid gap-5">
-                                <div class="flex items-center">
-                                    <div class="border bg-saddleBrown h-3 w-3 rounded-full mr-1"></div>
-                                    <p>Use Debit/Credit Card</p>
+                        <div class="bg-white shadow rounded-b-md px-5 py-10">
+                            <div class="grid">
+                                <div class="relative">
+                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                        for="first_name">Withdraw To My:</label>
+                                    <select placeholder="First Bank PLC"
+                                        class="w-full outline-none pt-4 pb-3.5 px-4 border border-[saddlebrown] mb-6">
+                                        <option value="">Select One</option>
+                                        <option value="savings">Bank</option>
+                                        <option value="current">Bitcoin Wallet</option>
+                                    </select>
                                 </div>
-                                <div class="grid gap-6 px-3 border-b pb-14">
+                                <div class="relative">
+                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Enter
+                                        Amount(USD)</label>
+                                    <input class="w-full outline-none py-3 pl-6 px-4 border border-[saddlebrown]"
+                                        type="text">
+                                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-lg">$</span>
+                                </div>
+                                <button type="button" class="mt-5 px-10 py-2.5 bg-[coral] text-white">Request
+                                    Withdrawal</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <div
+                            class="header rounded-t-md bg-[#2b2b2b] h-12 flex items-center justify-between cursor-pointer px-3">
+                            <p class="text-lg font-semibold text-center text-white">Account Details</p>
+                            <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
+                        </div>
+                        <div class="bg-white px-5 py-10 border-b">
+                            <div class="grid">
+                                <div>
+                                    <p class="text-xl font-medium ">Bank </p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 sm:gap-5 mt-6">
                                     <div class="relative">
                                         <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                            for="first_name">Betting
-                                            Currency</label>
-                                        <select
-                                            class="w-full outline-none py-3 px-4 border border-[saddlebrown] font-medium">
-                                            <option>United State Dollars (USD)</option>
-                                            <option>Nigerian Naira (NGN)</option>
-                                            <option>Canadian Dollar (CND)</option>
-                                            <option>German Rupees (RP)</option>
+                                            for="first_name">Account Number</label>
+                                        <input placeholder="0123456789"
+                                            class="w-full outline-none py-2.5 px-4 border border-[saddlebrown]"
+                                            type="text">
+                                    </div>
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Bank Name</label>
+                                        <input placeholder="First Bank PLC"
+                                            class="w-full outline-none py-2.5 px-4 border border-[saddlebrown]"
+                                            type="text">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 sm:gap-5 mt-6">
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Holder Name</label>
+                                        <input placeholder="Tunde Ednut"
+                                            class="w-full outline-none py-2.5 px-4 border border-[saddlebrown]"
+                                            type="text">
+                                    </div>
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Account Type</label>
+                                        <select placeholder="First Bank PLC"
+                                            class="w-full outline-none pt-3.5 pb-3 px-4 border border-[saddlebrown]">
+                                            <option value="savings">Savings</option>
+                                            <option value="current">Current</option>
                                         </select>
-
                                     </div>
-                                    <div class="relative">
-                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">
-                                            Card Number</label>
-                                        <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                            type="text">
-                                    </div>
-                                    <div class="relative">
-                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">
-                                            Name on Card</label>
-                                        <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                            type="text">
-                                    </div>
-                                    <div class="grid grid-cols-2 gap-5">
-                                        <div class="relative">
-                                            <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                                for="first_name">Expiry Date</label>
-                                            <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                                placeholder="MM/YY" type="text">
-                                        </div>
-                                        <div class="relative">
-                                            <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                                for="first_name">CCV</label>
-                                            <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]"
-                                                type="text">
-                                        </div>
-                                    </div>
-                                    <button class="mt-3 mx-auto py-3 px-6 text-sm rounded text-white bg-[coral] ">
-                                        Acknowledge & Continue
-                                    </button>
-
                                 </div>
+                                <button type="button" class="mt-5 px-10 py-2.5 bg-[#199ae0] text-white">Save
+                                    Changes</button>
                             </div>
-
-                            <div class="transfer grid mt-7">
-                                <div class="flex items-center">
-                                    <div class="border bg-saddleBrown h-3 w-3 rounded-full mr-1"></div>
-                                    <p class="font-medium text-lg">Do Bank Wire</p>
+                        </div>
+                        <div class="bg-white shadow rounded-b-md px-5 py-10 border-b">
+                            <div class="grid">
+                                <div>
+                                    <p class="text-xl font-medium ">Bitcoin </p>
                                 </div>
-                                <div class="px-3 grid">
-                                    <div class="grid grid-cols-2 gap-5 my-5">
-                                        <div>
-                                            <p class="text-sm">Bank Name</p>
-                                            <p>Guarantee Trust Bank</p>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm">Account Number</p>
-                                            <p>0123456789</p>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm">Routing Number</p>
-                                            <p>GTBNGLA1234</p>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm">Account Name </p>
-                                            <p>Tunde Ednut</p>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm">Account Type</p>
-                                            <p>Current</p>
-                                        </div>
+                                <div class="grid sm:grid-cols-2 gap-5 mt-6">
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Wallet Address</label>
+                                        <input placeholder="9003682822aiyebyg787gcd"
+                                            class="w-full outline-none py-2.5 px-4 border border-[saddlebrown]"
+                                            type="text">
                                     </div>
-                                    <button class="w-full rounded flex justify-between items-center px-3 py-3 border ">
-                                        <span class="text-sm sm:text-base">Upload Payment Screenshot</span>
-                                        <img src="../../images/icons8-upload-24.png" alt="Upload">
-                                    </button>
-                                    <button
-                                        class="px-7 mt-5 py-2 rounded text-center mx-auto bg-[coral] text-white">Continue</button>
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Bank Name</label>
+                                        <input placeholder="First Bank PLC"
+                                            class="w-full outline-none py-2.5 px-4 border border-[saddlebrown]"
+                                            type="text">
+                                    </div>
                                 </div>
+                                <button type="button" class="mt-5 px-10 py-2.5 bg-[#199ae0] text-white">Save
+                                    Changes</button>
                             </div>
                         </div>
                     </div>
