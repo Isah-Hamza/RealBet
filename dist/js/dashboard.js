@@ -35,6 +35,11 @@ const credit_debit_section = document.querySelector(
   "[data-credit_debit_section]"
 );
 const bank_wire_section = document.querySelector("[data-bank_wire_section]");
+const upload_screenshot = document.querySelector("[data-payment_screenshot]");
+
+// referral
+const refer_link = document.querySelector("[data-refer_link]");
+const copy_refer_link_btn = document.querySelector("[data-copy_refer_link]");
 
 betSlipBtn.addEventListener("click", () => {
   betSlipContainer.classList.remove("hide");
@@ -58,16 +63,27 @@ notToggler.addEventListener("click", () => {
   notDropdown.classList.toggle("hide");
 });
 
-credit_debit.addEventListener("click", function () {
+credit_debit?.addEventListener("click", function () {
   this.classList.add("active-method");
   bank_wire.classList.remove("active-method");
   credit_debit_section.classList.remove("hide");
   bank_wire_section.classList.add("hide");
 });
 
-bank_wire.addEventListener("click", function () {
+bank_wire?.addEventListener("click", function () {
   this.classList.add("active-method");
   credit_debit.classList.remove("active-method");
   bank_wire_section.classList.remove("hide");
   credit_debit_section.classList.add("hide");
+});
+
+copy_refer_link_btn?.addEventListener("click", () => {
+  navigator.clipboard.writeText(refer_link.textContent);
+  alert("Referral link copied to clipboard");
+});
+
+upload_screenshot.addEventListener("click", function () {
+  console.log("hello");
+  const file_input = upload_screenshot.querySelector("input");
+  file_input.click();
 });

@@ -86,7 +86,7 @@
                                 <button
                                     class="flex items-center gap-3 px-5 py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">
                                     <img class="w-7" src="../../images/icons8-user-100.png" alt="user">
-                                    <span>Profile</span>
+                                    <span class='pt-1'>Profile</span>
                                 </button>
                                 <button
                                     class="pl-7 flex items-center gap-3 px-5 py-4 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </header>
-        <main class="py-3 pb-28 md:pb-7 px-4 xl:px-10 md:h-[calc(100vh-80px)] overflow-hidden">
+        <main class="py-3 pb-28 md:pb-7 px-3 xl:px-10 md:h-[calc(100vh-80px)] overflow-hidden">
             <div class="main-container flex gap-4">
                 <aside
                     class="md:pr-1 hidden lg:flex left flex-col gap-5 w-1/4 md:h-[calc(100vh-100px)] overflow-auto pb-5">
@@ -229,15 +229,19 @@
                         <div class="bg-white shadow rounded-b-md py-5 pb-7 px-5 grid gap-5">
                             <img src="../../images/icons8-gift-64.png" class="w-24 h-24 justify-self-center" alt="">
                             <p class="text-xl font-semibold text-center">Refer a friend and get ₦5,000 </p>
-                            <p class='text-center'>93HDtundeYTp.realbet.com</p>
-                            <button class="flex gap-2 items-center py-3 px-7 justify-self-center border rounded-sm">
-                                <img class="w-5 h-5" src="../../images/icons8-copy-24.png" alt="">
-                                <span>Copy referral code</span>
-                            </button>
-                            <button class="flex gap-4 py-3 px-5 rounded-sm justify-self-center bg-blue-600 text-white">
-                                <img class="w-6" src="../../images/icons8-facebook-48.png" alt="Facebook">
-                                <span>Share on Facebook</span>
-                            </button>
+                            <p data-refer_link="" class='text-center'>93HDtundeYTp.realbet.com</p>
+                            <div class="flex flex-col sm:flex-row-reverse justify-center items-center gap-5">
+                                <button data-copy_refer_link
+                                    class="flex gap-2 items-center py-3 px-7 justify-self-center border  border-[coral]/40 rounded-sm">
+                                    <img class="w-5 h-5" src="../../images/icons8-copy-24.png" alt="">
+                                    <span>Copy referral code</span>
+                                </button>
+                                <button
+                                    class="border flex gap-4 py-3 px-5 rounded-sm justify-self-center bg-blue-600 text-white">
+                                    <img class="w-6" src="../../images/icons8-facebook-48.png" alt="Facebook">
+                                    <span>Share on Facebook</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -258,7 +262,7 @@
                                         <p class="text-xs">Pending Balance</p>
                                     </div>
                                 </div>
-                                <div class="pt-10">
+                                <div class="text-sm sm:text-base pt-10">
                                     <p class="text-lg ">3 pending referrals</p>
                                     <div class="bg-[coral]/40 p-5 rounded">
                                         <div class="flex justify-between items-center border-b  border-black/50  pb-2">
@@ -287,7 +291,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pt-7 pb-3">
+                                <div class="text-sm sm:text-base pt-7 pb-3">
                                     <p class="text-lg ">4 successful referrals</p>
                                     <div class="bg-[coral]/40 p-5 rounded">
                                         <div class="flex justify-between items-center border-b  border-black/50  pb-2">
@@ -356,7 +360,7 @@
                         </div>
                         <div class="shadow-lg bg-white rounded-b-lg">
                             <iframe class="h-72 object-cover" width="100%" height="100%"
-                                src="https://www.youtube.com/embed/4ZhHK8x_h0w?autoplay=1&mute=1"
+                                src="https://www.youtube.com/embed/4ZhHK8x_h0w?autoplay=0&mute=1"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
