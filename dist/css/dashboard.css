@@ -30,7 +30,8 @@ aside ul li:hover {
 .league > div {
   scrollbar-width: 0px;
 }
-.league > div::-webkit-scrollbar {
+.league > div::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
@@ -80,6 +81,28 @@ aside ul li:hover {
 
 .wallet table tbody tr td:first-child {
   padding-left: 10px;
+}
+
+.active-method {
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+.active-method::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 20px;
+  left: 0;
+  bottom: -1px;
+  background-color: #199ae0;
+  content: "";
+}
+
+.hide {
+  display: none !important;
 }
 
 @media screen and (max-width: 500px) {

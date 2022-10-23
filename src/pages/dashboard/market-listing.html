@@ -84,9 +84,15 @@
                             <div data-dropdown
                                 class="dropdown hide overflow-hidden absolute right-0 md:-right-8 top-16 z-10 text-center text-black bg-white shadow-lg rounded-md">
                                 <button
-                                    class="py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">Profile</button>
+                                    class="flex items-center gap-3 px-5 py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">
+                                    <img class="w-7" src="../../images/icons8-user-100.png" alt="user">
+                                    <span>Profile</span>
+                                </button>
                                 <button
-                                    class="py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">Logout</button>
+                                    class="pl-7 flex items-center gap-3 px-5 py-4 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">
+                                    <img class="w-5" src="../../images/icons8-logout-24.png" />
+                                    <span>Logout</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -126,6 +132,19 @@
                                         class="hover:bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
                                         <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
                                         <p>My Purse</p>
+                                    </a>
+                                </li>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b">
+                                    <a href="./deposit.html" class=" flex items-center gap-5">
+                                        <img class="w-6 h-6" src="../../images/icons8-deposit-64.png" alt='withdraw' />
+                                        <p>Deposit</p>
+                                    </a>
+                                </li>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b">
+                                    <a href="./withdraw.html" class=" flex items-center gap-5">
+                                        <img class="w-6 h-6" src="../../images/icons8-withdrawal-64.png"
+                                            alt='withdraw' />
+                                        <p>Withdraw</p>
                                     </a>
                                 </li>
                                 <li class="hover:bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
@@ -196,7 +215,33 @@
                             <div class="overlay z-10 absolute top-0 left-0 w-full h-full bg-black/50"></div>
                         </div>
                     </div> -->
-                    <div class="league">
+                    <div class="hide-scrollbar flex px-3 overflow-auto gap-4 py-4 mt-2">
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>20-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-[coral] text-white px-3 py-2 rounded-3xl">
+                            <p>21-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>22-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>23-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>24-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>25-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>26-10-2022</p>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                            <p>27-10-2022</p>
+                        </div>
+                    </div>
+                    <div class="league mt-5">
                         <p class="text-2xl font-semibold">Leagues</p>
                         <div class="flex px-3 overflow-auto gap-4 border-t border-b border-black/50 py-4 mt-2">
                             <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
@@ -249,7 +294,8 @@
                                     <div class="flex flex-col items-center -mb-12">
                                         <p class="font-bold text-xs">20.13.2022 09:23AM</p>
                                         <p class="text-lg">VS</p>
-                                        <button disabled class="cursor-not-allowed mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Ongoing</button>
+                                        <button disabled
+                                            class="cursor-not-allowed mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Ongoing</button>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <img class="w-12" src="../../images/icons8-manchester-united-50.png"
@@ -331,7 +377,8 @@
                                     <div class="flex flex-col items-center -mb-12">
                                         <p class="font-bold text-xs">20.13.2022 09:23AM</p>
                                         <p class="text-lg">VS</p>
-                                        <button class="mx-auto px-5 py-2 bg-[#199ae0]/40 text-xs mt-2 rounded-sm">Place Bet</button>
+                                        <button class="mx-auto px-5 py-2 bg-[#199ae0]/40 text-xs mt-2 rounded-sm">Place
+                                            Bet</button>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <img class="w-12" src="../../images/icons8-manchester-united-50.png"

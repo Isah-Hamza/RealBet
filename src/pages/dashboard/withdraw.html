@@ -84,9 +84,15 @@
                             <div data-dropdown
                                 class="dropdown hide overflow-hidden absolute right-0 md:-right-8 top-16 z-10 text-center text-black bg-white shadow-lg rounded-md">
                                 <button
-                                    class="py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">Profile</button>
+                                    class="flex items-center gap-3 px-5 py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">
+                                    <img class="w-7" src="../../images/icons8-user-100.png" alt="user">
+                                    <span>Profile</span>
+                                </button>
                                 <button
-                                    class="py-3 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">Logout</button>
+                                    class="pl-7 flex items-center gap-3 px-5 py-4 text-sm w-40 hover:bg-[#199ae0]/40 hover:font-semibold">
+                                    <img class="w-5" src="../../images/icons8-logout-24.png" />
+                                    <span>Logout</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -128,6 +134,19 @@
                                     <a href="./wallet.html" class=" flex items-center gap-5">
                                         <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
                                         <p>My Purse</p>
+                                    </a>
+                                </li>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b">
+                                    <a href="./deposit.html" class=" flex items-center gap-5">
+                                        <img class="w-6 h-6" src="../../images/icons8-deposit-64.png" alt='withdraw' />
+                                        <p>Deposit</p>
+                                    </a>
+                                </li>
+                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b">
+                                    <a href="./withdraw.html" class=" flex items-center gap-5">
+                                        <img class="w-6 h-6" src="../../images/icons8-withdrawal-64.png"
+                                            alt='withdraw' />
+                                        <p>Withdraw</p>
                                     </a>
                                 </li>
                                 <li>
@@ -209,15 +228,29 @@
                         </div>
                         <div class="bg-white shadow rounded-b-md px-5 py-10">
                             <div class="grid">
-                                <div class="relative">
-                                    <label class="absolute -top-2 bg-white text-xs px-2 left-2"
-                                        for="first_name">Withdraw To My:</label>
-                                    <select placeholder="First Bank PLC"
-                                        class="w-full outline-none pt-4 pb-3.5 px-4 border border-[saddlebrown] mb-6">
-                                        <option value="">Select One</option>
-                                        <option value="savings">Bank</option>
-                                        <option value="current">Bitcoin Wallet</option>
-                                    </select>
+                                <div class="grid sm:grid-cols-2 gap-6 sm:gap-5">
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Withdraw To My:</label>
+                                        <select placeholder="First Bank PLC"
+                                            class="w-full outline-none pt-4 pb-3.5 px-4 border border-[saddlebrown] sm:mb-6">
+                                            <option value="">Select One</option>
+                                            <option value="savings">Bank</option>
+                                            <option value="current">Bitcoin Wallet</option>
+                                        </select>
+                                    </div>
+                                    <div class="relative">
+                                        <label class="absolute -top-2 bg-white text-xs px-2 left-2"
+                                            for="first_name">Currency:</label>
+                                        <select placeholder="First Bank PLC"
+                                            class="w-full outline-none pt-4 pb-3.5 px-4 border border-[saddlebrown] mb-6">
+                                            <option value="">Choose Preferred Currency</option>
+                                            <option value="savings">USD</option>
+                                            <option value="current">CND</option>
+                                            <option value="current">NGN</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                                 <div class="relative">
                                     <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Enter
@@ -226,7 +259,7 @@
                                         type="text">
                                     <span class="absolute left-3 top-1/2 -translate-y-1/2 text-lg">$</span>
                                 </div>
-                                <button type="button" class="mt-5 px-10 py-2.5 bg-[coral] text-white">Request
+                                <button type="button" class="mt-7 sm:mt-5 px-10 py-2.5 bg-[coral] text-white">Request
                                     Withdrawal</button>
                             </div>
                         </div>
@@ -242,7 +275,7 @@
                                 <div>
                                     <p class="text-xl font-medium ">Bank </p>
                                 </div>
-                                <div class="grid grid-cols-2 gap-3 sm:gap-5 mt-6">
+                                <div class="grid sm:grid-cols-2 gap-6 sm:gap-5 mt-6">
                                     <div class="relative">
                                         <label class="absolute -top-2 bg-white text-xs px-2 left-2"
                                             for="first_name">Account Number</label>
@@ -258,7 +291,7 @@
                                             type="text">
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-2 gap-3 sm:gap-5 mt-6">
+                                <div class="grid sm:grid-cols-2 gap-6 sm:gap-5 mt-6">
                                     <div class="relative">
                                         <label class="absolute -top-2 bg-white text-xs px-2 left-2"
                                             for="first_name">Holder Name</label>
@@ -276,7 +309,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button type="button" class="mt-5 px-10 py-2.5 bg-[#199ae0] text-white">Save
+                                <button type="button" class="mt-7 sm:mt-5 px-10 py-2.5 bg-[#199ae0] text-white">Save
                                     Changes</button>
                             </div>
                         </div>
@@ -301,7 +334,7 @@
                                             type="text">
                                     </div>
                                 </div>
-                                <button type="button" class="mt-5 px-10 py-2.5 bg-[#199ae0] text-white">Save
+                                <button type="button" class="mt-7 sm:mt-5 px-10 py-2.5 bg-[#199ae0] text-white">Save
                                     Changes</button>
                             </div>
                         </div>
