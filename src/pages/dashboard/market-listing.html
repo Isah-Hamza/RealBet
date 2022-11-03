@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="main-container w-full min-h-screen bg-[#b7b7b7]">
+    <div class="hide main-container w-full min-h-screen bg-[#b7b7b7]">
         <header class="shadow-md h-20 w-full bg-[#2b2b2b]">
             <div class="flex justify-between items-center h-full px-3 sm:px-5 md:px-10 text-white">
                 <div class="flex items-center gap-3">
@@ -116,7 +116,7 @@
                                         <p>Dashboard</p>
                                     </a>
                                 </li>
-                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
+                                <li class="bg-[#ccc] py-1.5 px-5 border-b flex items-center gap-5">
                                     <img class="w-5 h-5" src="../../images/icons8-marketplace-hub-50.png"
                                         alt='market ' />
                                     <p>Market List</p>
@@ -174,23 +174,32 @@
                     </div>
                 </aside>
                 <div
-                    class="mobile-buttom-menu block md:hidden fixed bottom-0 left-0 w-full rounded-t-md bg-black text-white overflow-hidden">
+                    class="mobile-buttom-menu block md:hidden fixed z-10 bottom-0 left-0 w-full rounded-t-md bg-black text-white overflow-hidden">
                     <ul class="flex justify-between">
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-dashboard-layout-50.png" alt='dashboard' />
-                            <p>Dashboard</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5 ">
+                            <a href="./index.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-dashboard-layout-50.png"
+                                    alt='dashboard' />
+                                <p>Dashboard</p>
+                            </a>
                         </li>
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
-                            <p>Market</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5 ">
+                            <a href="./market-listing.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
+                                <p>Market</p>
+                            </a>
                         </li>
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
-                            <p>Wallet</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5">
+                            <a href="./wallet.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
+                                <p>Wallet</p>
+                            </a>
                         </li>
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-user-50.png" alt='user profile' />
-                            <p>Profile</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5 ">
+                            <a href="./profile.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-user-50.png" alt='user profile' />
+                                <p>Profile</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -216,30 +225,30 @@
                         </div>
                     </div> -->
                     <div class="hide-scrollbar flex px-3 overflow-auto gap-4 py-4 mt-2">
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>20-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-[coral] text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-[coral] text-white px-3 py-2 rounded-3xl">
                             <p>21-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>22-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>23-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>24-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>25-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>26-10-2022</p>
-                        </div>
-                        <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
+                        </button>
+                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
                             <p>27-10-2022</p>
-                        </div>
+                        </button>
                     </div>
                     <div class="league mt-5">
                         <p class="text-2xl font-semibold">Leagues</p>
@@ -294,8 +303,8 @@
                                     <div class="flex flex-col items-center -mb-12">
                                         <p class="font-bold text-xs">20.13.2022 09:23AM</p>
                                         <p class="text-lg">VS</p>
-                                        <button disabled
-                                            class="cursor-not-allowed mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Ongoing</button>
+                                        <button
+                                            class="mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Ongoing</button>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <img class="w-12" src="../../images/icons8-manchester-united-50.png"
@@ -315,8 +324,8 @@
                                     <div class="flex flex-col items-center -mb-12">
                                         <p class="font-bold text-xs">20.13.2022 09:23AM</p>
                                         <p class="text-lg">VS</p>
-                                        <button class="mx-auto px-5 py-2 bg-[#199ae0]/40 text-xs mt-2 rounded-sm">Place
-                                            Bet</button>
+                                        <button class="mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Full
+                                            Time</button>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <img class="w-12" src="../../images/icons8-arsenal-fc-50.png"
@@ -442,12 +451,19 @@
             </div>
         </main>
     </div>
+    <div data-spinner
+        class="gap-2 fixed z-10 inset-0 bg-black/50 flex flex-col justify-center items-center text-gray-200">
+        <img class="w-8 animate-spin" src="../../images/icons8-swirl-16.png" alt="spinner" />
+        <p>Loading...</p>
+    </div>
     <!-- jQuery cdn link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--  Slick JS -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--Custom Js  -->
     <script defer src="../../../dist/js/dashboard.js"></script>
+    <!-- Tailwindcss cdn link  -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 </body>
 
 </html>

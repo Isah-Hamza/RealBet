@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="main-container w-full min-h-screen bg-[#b7b7b7] wallet">
+    <div class="hide main-container w-full min-h-screen bg-[#b7b7b7] wallet">
         <header class="shadow-md h-20 w-full bg-[#2b2b2b]">
             <div class="flex justify-between items-center h-full px-3 sm:px-5 md:px-10 text-white">
                 <div class="flex items-center gap-3">
@@ -128,7 +128,7 @@
                                         <p>Referrals</p>
                                     </a>
                                 </li>
-                                <li class="hover:bg-[#ccc] py-1.5 px-5 border-b">
+                                <li class="bg-[#ccc] py-1.5 px-5 border-b">
                                     <a href="./wallet.html" class=" flex items-center gap-5">
                                         <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
                                         <p>My Purse</p>
@@ -179,21 +179,30 @@
                 <div
                     class="mobile-buttom-menu block md:hidden fixed z-10 bottom-0 left-0 w-full rounded-t-md bg-black text-white overflow-hidden">
                     <ul class="flex justify-between">
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-dashboard-layout-50.png" alt='dashboard' />
-                            <p>Dashboard</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5 ">
+                            <a href="./index.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-dashboard-layout-50.png"
+                                    alt='dashboard' />
+                                <p>Dashboard</p>
+                            </a>
                         </li>
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
-                            <p>Market</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5 ">
+                            <a href="./market-listing.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
+                                <p>Market</p>
+                            </a>
                         </li>
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
-                            <p>Wallet</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5">
+                            <a href="./wallet.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
+                                <p>Wallet</p>
+                            </a>
                         </li>
-                        <li class="hover:bg-[#ccc] text-[13px] py-3 px-5 flex flex-col text-center items-center gap-2">
-                            <img class="w-6 h-6" src="../../images/icons8-user-50.png" alt='user profile' />
-                            <p>Profile</p>
+                        <li class="hover:bg-[coral]/50 text-[13px] py-3 px-5 ">
+                            <a href="./profile.html" class="flex flex-col text-center items-center gap-2">
+                                <img class="w-6 h-6" src="../../images/icons8-user-50.png" alt='user profile' />
+                                <p>Profile</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -410,12 +419,19 @@
             </div>
         </main>
     </div>
+    <div data-spinner
+        class="gap-2 fixed z-10 inset-0 bg-black/50 flex flex-col justify-center items-center text-gray-200">
+        <img class="w-8 animate-spin" src="../../images/icons8-swirl-16.png" alt="spinner" />
+        <p>Loading...</p>
+    </div>
     <!-- jQuery cdn link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--  Slick JS -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--Custom Js  -->
     <script defer src="../../../dist/js/dashboard.js"></script>
+    <!-- Tailwindcss cdn link  -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 </body>
 
 </html>

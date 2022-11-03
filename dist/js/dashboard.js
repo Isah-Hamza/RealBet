@@ -17,6 +17,8 @@ $(".single-promotion").slick({
   autoplaySpeed: 2500,
 });
 
+const mainContainer = document.querySelector(".main-container");
+const loader = document.querySelector("[data-spinner]");
 const dropdownToggler = document.querySelector("[data-dropdownToggler]");
 const dropdown = document.querySelector("[data-dropdown]");
 
@@ -40,6 +42,14 @@ const upload_screenshot = document.querySelector("[data-payment_screenshot]");
 // referral
 const refer_link = document.querySelector("[data-refer_link]");
 const copy_refer_link_btn = document.querySelector("[data-copy_refer_link]");
+
+console.log(mainContainer);
+console.log("spinner", loader);
+
+document.addEventListener("DOMContentLoaded", () => {
+  mainContainer.classList.remove("hide");
+  loader.classList.add("hide");
+});
 
 betSlipBtn.addEventListener("click", () => {
   betSlipContainer.classList.remove("hide");
