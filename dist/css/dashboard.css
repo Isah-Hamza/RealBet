@@ -89,7 +89,7 @@ aside ul li:hover {
   position: relative;
   border: 1px solid gainsboro;
   border-bottom: 0;
-  padding-inline:20px;
+  padding-inline: 20px;
   padding-block: 5px;
   color: blue;
 }
@@ -108,6 +108,11 @@ aside ul li:hover {
 
 .hide {
   display: none !important;
+}
+
+.hide-sidebar {
+  left: -100% !important;
+  transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 500px) {

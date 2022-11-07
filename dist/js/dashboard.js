@@ -18,6 +18,9 @@ $(".single-promotion").slick({
 });
 
 const mainContainer = document.querySelector(".main-container");
+const mobileSidebar = document.querySelector(".mobile-sidebar");
+const hamburger = document.querySelector("[data-menu]");
+const closeMenu = document.querySelector("[data-close-menu]");
 const loader = document.querySelector("[data-spinner]");
 const dropdownToggler = document.querySelector("[data-dropdownToggler]");
 const dropdown = document.querySelector("[data-dropdown]");
@@ -29,6 +32,13 @@ const placeBetBtn = document.querySelector("[data-placeBetBtn]");
 const placeBetContainer = document.querySelector("[data-placeBetContainer]");
 const betSlipBtn = document.querySelector("[data-betSlipBtn]");
 const betSlipContainer = document.querySelector("[data-betSlipContainer]");
+
+hamburger?.addEventListener("click", () => {
+  mobileSidebar.classList.remove("hide-sidebar");
+});
+closeMenu?.addEventListener("click", () => {
+  mobileSidebar.classList.add("hide-sidebar");
+});
 
 // deposit
 const credit_debit = document.querySelector("[data-credit_debit]");
@@ -46,30 +56,30 @@ const copy_refer_link_btn = document.querySelector("[data-copy_refer_link]");
 console.log(mainContainer);
 console.log("spinner", loader);
 
-document.addEventListener("DOMContentLoaded", () => {
+document?.addEventListener("DOMContentLoaded", () => {
   mainContainer.classList.remove("hide");
   loader.classList.add("hide");
 });
 
-betSlipBtn.addEventListener("click", () => {
+betSlipBtn?.addEventListener("click", () => {
   betSlipContainer.classList.remove("hide");
   placeBetContainer.classList.add("hide");
   betSlipBtn.classList.add("active-tab");
   placeBetBtn.classList.remove("active-tab");
 });
 
-placeBetBtn.addEventListener("click", () => {
+placeBetBtn?.addEventListener("click", () => {
   placeBetContainer.classList.remove("hide");
   betSlipContainer.classList.add("hide");
   placeBetBtn.classList.add("active-tab");
   betSlipBtn.classList.remove("active-tab");
 });
 
-dropdownToggler.addEventListener("click", () => {
+dropdownToggler?.addEventListener("click", () => {
   dropdown.classList.toggle("hide");
 });
 
-notToggler.addEventListener("click", () => {
+notToggler?.addEventListener("click", () => {
   notDropdown.classList.toggle("hide");
 });
 
@@ -92,7 +102,7 @@ copy_refer_link_btn?.addEventListener("click", () => {
   alert("Referral link copied to clipboard");
 });
 
-upload_screenshot.addEventListener("click", function () {
+upload_screenshot?.addEventListener("click", function () {
   console.log("hello");
   const file_input = upload_screenshot.querySelector("input");
   file_input.click();
