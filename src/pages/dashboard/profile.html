@@ -28,8 +28,11 @@
         <header class="shadow-md h-20 w-full bg-[#2b2b2b]">
             <div class="flex justify-between items-center h-full px-3 sm:px-5 md:px-10 text-white">
                 <div class="flex items-center gap-3">
-                    <p class="text-2xl sm:text-3xl font-semibold cursor-pointer">RealBet</p>
-                    <p class="text-sm font-semibold mt-1"> > <span>&nbsp;</span> Profile</p>
+                    <p class="hidden xl:block text-2xl sm:text-3xl font-semibold cursor-pointer">RealBet</p>
+                    <img data-menu class="block xl:hidden w-8 cursor-pointer" src='../../images/icons8-menu-48.png'
+                        alt="'menu" />
+                    <p class="text-sm font-semibold mt-1"> <span class="hidden xl:inline ">></span> <span>&nbsp;</span>
+                        Market Listing</p>
                 </div>
                 <div class="flex gap-14 items-center">
                     <div class="flex items-center gap-5">
@@ -248,7 +251,7 @@
                                     <p class="text-sm -mt-1">Minna, Nigeria.</p>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-2 gap-3 sm:gap-5">
                                 <div class="relative">
                                     <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">First
                                         Name</label>
@@ -267,7 +270,7 @@
                                     Email</label>
                                 <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]" type="email">
                             </div>
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-2 gap-3 sm:gap-5">
                                 <div class="relative">
                                     <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Phone
                                         Number</label>
@@ -293,7 +296,7 @@
                             <img class="w-3" src="../../images/icons8-sort-down-48.png" alt="caret down">
                         </div>
                         <div class="bg-white shadow rounded-b-md py-5 pt-10 px-5 grid gap-7">
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-2 gap-3 sm:gap-5">
                                 <div class="relative">
                                     <label class="absolute -top-2 bg-white text-xs px-2 left-2"
                                         for="first_name">Verification Code</label>
@@ -312,7 +315,7 @@
                                     Password</label>
                                 <input class="w-full outline-none py-2 px-4 border border-[saddlebrown]" type="email">
                             </div>
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-2 gap-3 sm:gap-5">
                                 <div class="relative">
                                     <label class="absolute -top-2 bg-white text-xs px-2 left-2" for="first_name">Secret
                                         Question</label>
@@ -382,6 +385,55 @@
                 </div>
             </div>
         </main>
+        <section
+            class="block xl:hidden mobile-sidebar hide-sidebar fixed z-50 left-0 top-0 transition-all ease-in-out duration-500 h-screen overflow-y-auto w-[315px] bg-black rounded-r">
+            <img data-close-menu class="absolute right-5 top-7 w-6 cursor-pointer"
+                src="../../images/icons8-close-30.png" alt="close icon">
+            <div class="mt-20 p-5">
+                <ul class="grid gap-2 text-[#eee]">
+                    <li class="py-3 px-5 ">
+                        <a href="./index.html" class="flex items-center gap-5">
+                            <img class="w-5 h-5" src="../../images/icons8-dashboard-layout-50.png" alt='dashboard' />
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class=" py-3 px-5 ">
+                        <a href="./market-listing.html" class="flex items-center gap-5">
+                            <img class="w-5 h-5" src="../../images/icons8-marketplace-hub-50.png" alt='market ' />
+                            <p>Market List</p>
+                        </a>
+                    </li>
+                    <li class="py-3 px-5 ">
+                        <a href="./referral.html" class="flex items-center gap-5">
+                            <img class="w-6 h-6" src="../../images/icons8-gift-64.png" alt='market ' />
+                            <p>Referrals</p>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="./wallet.html" class="py-3 px-5 flex items-center gap-5">
+                            <img class="w-6 h-6" src="../../images/icons8-wallet-48.png" alt='purse' />
+                            <p>My Purse</p>
+                        </a>
+                    </li>
+                    <li class="py-3 px-5">
+                        <a href="./deposit.html" class=" flex items-center gap-5">
+                            <img class="w-6 h-6" src="../../images/icons8-deposit-64.png" alt='withdraw' />
+                            <p>Deposit</p>
+                        </a>
+                    </li>
+                    <li class="py-3 px-5">
+                        <a href="./withdraw.html" class=" flex items-center gap-5">
+                            <img class="w-6 h-6" src="../../images/icons8-withdrawal-64.png" alt='withdraw' />
+                            <p>Withdraw</p>
+                        </a>
+                    </li>
+                    <li class="bg-[coral]/40 py-3 px-5 flex items-center gap-5">
+                        <img class="w-6 h-6" src="../../images/icons8-user-50.png" alt='user profile' />
+                        <p> <a href="./profile.html">User Profile</a> </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
     <div data-spinner
         class="gap-2 fixed z-10 inset-0 bg-black/50 flex flex-col justify-center items-center text-gray-200">
