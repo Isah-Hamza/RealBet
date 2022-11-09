@@ -40,6 +40,13 @@ aside ul li:hover {
   display: none !important;
 }
 
+.design > div {
+  background-image: url("../../src/images/illustration3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 1000px) {
   ::-webkit-scrollbar {
     width: 7px;

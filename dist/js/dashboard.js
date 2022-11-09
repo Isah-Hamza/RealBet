@@ -32,6 +32,12 @@ const placeBetBtn = document.querySelector("[data-placeBetBtn]");
 const placeBetContainer = document.querySelector("[data-placeBetContainer]");
 const betSlipBtn = document.querySelector("[data-betSlipBtn]");
 const betSlipContainer = document.querySelector("[data-betSlipContainer]");
+const design = document.querySelector("[data-design]");
+const closeDesign = document.querySelector("[data-close-design]");
+
+const placeBetBtns = document.querySelectorAll(
+  "[data-competition-list] > div button"
+);
 
 hamburger?.addEventListener("click", () => {
   mobileSidebar.classList.remove("hide-sidebar");
@@ -53,8 +59,16 @@ const upload_screenshot = document.querySelector("[data-payment_screenshot]");
 const refer_link = document.querySelector("[data-refer_link]");
 const copy_refer_link_btn = document.querySelector("[data-copy_refer_link]");
 
-console.log(mainContainer);
-console.log("spinner", loader);
+// dashboard
+placeBetBtns?.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    design.classList.remove("hide");
+  })
+);
+
+closeDesign.addEventListener("click", () => {
+  design.classList.add("hide");
+});
 
 document?.addEventListener("DOMContentLoaded", () => {
   mainContainer.classList.remove("hide");
