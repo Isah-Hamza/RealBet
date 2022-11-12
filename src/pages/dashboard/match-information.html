@@ -20,7 +20,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../../dist/css/output.css">
     <link rel="stylesheet" href="../../../dist/css/dashboard.css">
-    <title>Dashbaord | Market Listing</title>
+    <title>Dashbaord | Match Information</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     <img data-menu class="block xl:hidden w-8 cursor-pointer" src='../../images/icons8-menu-48.png'
                         alt="'menu" />
                     <p class="text-sm font-semibold mt-1"> <span class="hidden xl:inline ">></span> <span>&nbsp;</span>
-                        Market Listing</p>
+                        Match Information</p>
                 </div>
                 <div class="flex gap-14 items-center">
                     <div class="flex items-center gap-5">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </header>
-        <main class="py-3 pb-28 md:pb-7 px-3 xl:px-10 md:h-[calc(100vh-80px)] overflow-hidden">
+        <main data-match-info class="py-3 pb-28 md:pb-7 px-3 xl:px-10 md:h-[calc(100vh-80px)] overflow-hidden">
             <div class="main-container flex gap-4">
                 <aside
                     class="md:pr-1 hidden lg:flex left flex-col gap-5 w-1/4 md:h-[calc(100vh-100px)] overflow-auto pb-5">
@@ -207,202 +207,58 @@
                     </ul>
                 </div>
                 <div class="md:pr-1 center w-full md:w-2/3 lg:!w-2/4 md:h-[calc(100vh-100px)] overflow-auto pb-5">
-                    <!-- <div class="header rounded-t-md bg-[#2b2b2b] h-12 flex items-center px-3">
-                        <p class="text-lg font-semibold text-center text-white">Table Tennis</p>
-                    </div>
-                    <div class="single h-64">
-                        <div class="w-full relative">
-                            <img class="h-64 w-full object-cover" src="../../images/pexels-kenneth-2838579.jpg"
-                                alt="ad1">
-                            <div class="overlay z-10 absolute top-0 left-0 w-full h-full bg-black/50"></div>
-                        </div>
-                        <div class="w-full relative">
-                            <img class="h-64 w-full object-cover"
-                                src="../../images/pexels-asad-photo-maldives-1591373.jpg" alt="ad2">
-                            <div class="overlay z-10 absolute top-0 left-0 w-full h-full bg-black/50"></div>
-                        </div>
-                        <div class="w-full relative">
-                            <img class="h-64 w-full object-cover" src="../../images/pexels-ngoc-vuong-2831299.jpg"
-                                alt="ad3">
-                            <div class="overlay z-10 absolute top-0 left-0 w-full h-full bg-black/50"></div>
-                        </div>
-                    </div> -->
-                    <div class="hide-scrollbar flex px-3 overflow-auto gap-4 py-4 mt-2">
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>20-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-[coral] text-white px-3 py-2 rounded-3xl">
-                            <p>21-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>22-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>23-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>24-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>25-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>26-10-2022</p>
-                        </button>
-                        <button class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-3xl">
-                            <p>27-10-2022</p>
-                        </button>
-                    </div>
-                    <div class="league mt-5">
-                        <p class="text-2xl font-semibold">Leagues</p>
-                        <div class="flex px-3 overflow-auto gap-4 border-t border-b border-black/50 py-4 mt-2">
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>FA Cup</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>Super League</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>African Nation Cup</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>World Cup</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>Italian Cup</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>Nations Cup</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>Spanish Cup</p>
-                            </div>
-                            <div class="flex shrink-0 items-center gap-1 bg-black/40 text-white px-3 py-2 rounded-md">
-                                <img class="w-6" src="../../images/icons8-soccer-ball-48.png" alt="soccer">
-                                <p>FA Cup</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="competitions mt-10">
+                    <div class="competitions">
                         <div class="header rounded-t-md bg-[#2b2b2b] h-12 flex items-center px-3">
-                            <p class="text-lg font-semibold text-center text-white">All Competitions</p>
+                            <p class="text-lg font-semibold text-center text-white">Match Details</p>
                         </div>
-                        <div class="competition-lists flex flex-col gap-3 mt-3">
-                            <div class="grid item bg-white rounded-md shadow-lg px-4 sm:px-10 py-5 pb-14">
+                        <div class="grid item bg-white rounded-md shadow-lg px-4 sm:px-10 py-5 pb-8 mt-3 sm:mt-5">
+                            <div class="flex items-center justify-between">
                                 <p class="text-sm sm:text-base font-semibold uppercase ">English League</p>
-                                <div class="flex justify-between items-center mt-5">
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-real-madrid-48.png"
-                                            alt="real madrid">
-                                        <p class="font-semibold">Madrid</p>
-                                    </div>
-                                    <div class="flex flex-col items-center -mb-12">
-                                        <p class="font-bold text-xs">20.13.2022 09:23AM</p>
-                                        <p class="text-lg">VS</p>
-                                        <button
-                                            class="mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Ongoing</button>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-manchester-united-50.png"
-                                            alt="manchester united">
-                                        <p class="font-semibold">Man U</p>
-                                    </div>
-
+                                <p class="font-bold text-xs">20.13.2022 09:00:00AM</p>
+                            </div>
+                            <div class="grid grid-cols-[1fr,3fr,1fr] sm:grid-cols-[1fr,5fr,1fr] gap-5 sm:gap-10 mt-10">
+                                <img class="w-16 h-16" src="../../images/icons8-real-madrid-48.png" alt="real madrid">
+                                <div class="flex-1 grid gap-2">
+                                    <p class="font-semibold">Real Madrid</p>
+                                    <p class="text-sm">HOME</p>
+                                </div>
+                                <div class="border-l py-3 px-5">
+                                    <p>0</p>
                                 </div>
                             </div>
-                            <div class="grid item bg-white rounded-md shadow-lg px-4 sm:px-10 py-5 pb-14">
-                                <p class="text-sm sm:text-base font-semibold uppercase ">Cup</p>
-                                <div class="flex justify-between items-center mt-5">
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-chelsea-fc-50.png" alt="Chelsea">
-                                        <p class="font-semibold">Chelsea</p>
-                                    </div>
-                                    <div class="flex flex-col items-center -mb-12">
-                                        <p class="font-bold text-xs">20.13.2022 09:23AM</p>
-                                        <p class="text-lg">VS</p>
-                                        <button class="mx-auto px-5 py-2 bg-[coral] text-xs mt-2 rounded-sm">Full
-                                            Time</button>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-arsenal-fc-50.png"
-                                            alt="manchester united">
-                                        <p class="font-semibold">Arsenal</p>
-                                    </div>
+                            <div class="grid grid-cols-[1fr,3fr,1fr] sm:grid-cols-[1fr,5fr,1fr] gap-5 sm:gap-10 mt-14">
+                                <img class="w-12 h-12 ml-2 sm:ml-3"
+                                    src="../../images/icons8-manchester-united-50.png" />
+                                <div class="flex-1 grid gap-2">
+                                    <p class="font-semibold">Manchester United</p>
+                                    <p class="text-sm">AWAY</p>
+                                </div>
+                                <div class="border-l py-3 px-5">
+                                    <p>0</p>
                                 </div>
                             </div>
-                            <div class="grid item bg-white rounded-md shadow-lg px-4 sm:px-10 py-5 pb-14">
-                                <p class="text-sm sm:text-base font-semibold uppercase ">Nations Cup</p>
-                                <div class="flex justify-between items-center mt-5">
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-barcelona-fc-50.png" alt="Chelsea">
-                                        <p class="font-semibold">England</p>
-                                    </div>
-                                    <div class="flex flex-col items-center -mb-12">
-                                        <p class="font-bold text-xs">20.13.2022 09:23AM</p>
-                                        <p class="text-lg">VS</p>
-                                        <a href="./match-information.html">
-                                            <button
-                                                class="mx-auto px-5 py-2 bg-[#199ae0]/40 text-xs mt-2 rounded-sm">Place
-                                                Bet</button>
-                                        </a>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-real-madrid-48.png"
-                                            alt="manchester united">
-                                        <p class="font-semibold">Nigeria</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid item bg-white rounded-md shadow-lg px-4 sm:px-10 py-5 pb-14">
-                                <p class="text-sm sm:text-base font-semibold uppercase ">English League</p>
-                                <div class="flex justify-between items-center mt-5">
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-manchester-united-50.png"
-                                            alt="real madrid">
-                                        <p class="font-semibold">Man U</p>
-                                    </div>
-                                    <div class="flex flex-col items-center -mb-12">
-                                        <p class="font-bold text-xs">20.13.2022 09:23AM</p>
-                                        <p class="text-lg">VS</p>
-                                        <button class="mx-auto px-5 py-2 bg-[#199ae0]/40 text-xs mt-2 rounded-sm">Place
-                                            Bet</button>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-chelsea-fc-50.png"
-                                            alt="manchester united">
-                                        <p class="font-semibold">Chelsea</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid item bg-white rounded-md shadow-lg px-4 sm:px-10 py-5 pb-14">
-                                <p class="text-sm sm:text-base font-semibold uppercase ">Super League</p>
-                                <div class="flex justify-between items-center mt-5">
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-real-madrid-48.png"
-                                            alt="real madrid">
-                                        <p class="font-semibold">Liverpool</p>
-                                    </div>
-                                    <div class="flex flex-col items-center -mb-12">
-                                        <p class="font-bold text-xs">20.13.2022 09:23AM</p>
-                                        <p class="text-lg">VS</p>
-                                        <button class="mx-auto px-5 py-2 bg-[#199ae0]/40 text-xs mt-2 rounded-sm">Place
-                                            Bet</button>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <img class="w-12" src="../../images/icons8-manchester-united-50.png"
-                                            alt="manchester united">
-                                        <p class="font-semibold">Aston Villa</p>
-                                    </div>
-
-                                </div>
-                            </div>
+                            <span
+                                class="text-center px-5 py-1.5 rounded w-fit block mx-auto mt-10 text-sm">Live
+                                Now</span>
+                        </div>
+                        <div class="rounded-md bg-white px-4 sm:px-10 py-5 mt-3">
+                            <table class="w-full">
+                                <thead>
+                                    <tr>
+                                        <th>Score</th>
+                                        <th>Odds(%)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td class="text-center pt-4"> <span>0</span> - <span>0</span></td>
+                                        <td class="text-center pt-4">4%</td>
+                                        <td class="text-center pt-4   w-fit"><span data-place-bet role="button"
+                                                class=" bg-[#199ae0]/40 px-3 py-2 rounded">Place bet</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -452,6 +308,55 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
+                    </div>
+                </div>
+                <div data-place-bet-modal class="hide inset-0 bg-black/50 fixed z-10 grid place-content-center">
+                    <div class="bg-white w-[95%] sm:w-[450px] rounded mx-auto">
+                        <div class="w-full flex items-center justify-between px-3 py-2 border-b">
+                            <p>Bet Summary</p>
+                            <span data-close-place-bet-modal role="button" class="text-3xl">&times;</span>
+                        </div>
+                        <div class="border-b p-4 ">
+                            <div class="flex items-center gap-5 text-center mx-auto w-fit">
+                                <p class="font-semibold">Man United</p>
+                                <span class="text-red-600">VS</span>
+                                <p class="font-semibold">Real Madrid</p>
+                            </div>
+                            <div class="flex items-center gap-5 text-center mx-auto w-fit mt-2">
+                                <p class="font-semibold">Score</p>
+                                <div>
+                                    <span class="text-red-600">0</span>
+                                    <span class="text-red-600"> - </span>
+                                    <span class="text-red-600">0</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-5 text-sm sm:text-base">
+                                <div class="flex items-center gap-2">
+                                    <p>Expected Profit </p>
+                                    <p>$20</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <p>Current Balance </p>
+                                    <p>$53,000</p>
+                                </div>
+                            </div>
+                            <div class="mt-5 grid">
+                                <label class="font-semibold" for="amount">Amount</label>
+                                <input placeholder="Enter Amount to Bet" type="text" id="amount"
+                                    class="w-full rounded outline-none" />
+                            </div>
+                            <div class="grid grid-cols-4 gap-3 mt-5">
+                                <button class="text-sm bg-purple-600 text-white rounded px-5 py-1.5">$50</button>
+                                <button class="text-sm bg-purple-600 text-white rounded px-5 py-1.5">$100</button>
+                                <button class="text-sm bg-purple-600 text-white rounded px-5 py-1.5">$200</button>
+                                <button class="text-sm bg-purple-600 text-white rounded px-5 py-1.5">$500</button>
+                            </div>
+                        </div>
+                        <div class="px-3 py-3 flex items-center gap-3 justify-end">
+                            <button class="text-sm bg-red-400 text-white rounded px-5 py-1.5">Close</button>
+                            <button class="text-sm bg-saddleBrown text-white rounded px-7 py-1.5">Bet</button>
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -35,6 +35,14 @@ const betSlipContainer = document.querySelector("[data-betSlipContainer]");
 const design = document.querySelector("[data-design]");
 const closeDesign = document.querySelector("[data-close-design]");
 
+const placeBetModal = document.querySelector("[data-place-bet-modal]");
+const closePlaceBetModal = document.querySelector(
+  "[data-close-place-bet-modal]"
+);
+const matchInfoPlaceBet = document.querySelector(
+  "[data-match-info] [data-place-bet]"
+);
+
 const placeBetBtns = document.querySelectorAll(
   "[data-competition-list] > div button"
 );
@@ -44,6 +52,15 @@ hamburger?.addEventListener("click", () => {
 });
 closeMenu?.addEventListener("click", () => {
   mobileSidebar.classList.add("hide-sidebar");
+});
+
+// match info
+matchInfoPlaceBet?.addEventListener("click", () => {
+  placeBetModal.classList.remove("hide");
+});
+
+closePlaceBetModal?.addEventListener("click", () => {
+  placeBetModal.classList.add("hide");
 });
 
 // deposit
@@ -66,7 +83,7 @@ placeBetBtns?.forEach((btn) =>
   })
 );
 
-closeDesign.addEventListener("click", () => {
+closeDesign?.addEventListener("click", () => {
   design.classList.add("hide");
 });
 
