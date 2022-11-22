@@ -43,6 +43,13 @@ const matchInfoPlaceBet = document.querySelector(
   "[data-match-info] [data-place-bet]"
 );
 
+const matchSchedule = document.querySelector("[data-match-schedule]");
+const closeMatchSchedule = document.querySelector(
+  "[data-close-match-schedule]"
+);
+
+console.log(matchSchedule, closeMatchSchedule);
+
 const placeBetBtns = document.querySelectorAll(
   "[data-competition-list] > div button"
 );
@@ -52,6 +59,12 @@ hamburger?.addEventListener("click", () => {
 });
 closeMenu?.addEventListener("click", () => {
   mobileSidebar.classList.add("hide-sidebar");
+});
+
+// match schedules
+
+closeMatchSchedule.addEventListener("click", () => {
+  matchSchedule.classList.add("hide");
 });
 
 // match info

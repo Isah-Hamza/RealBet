@@ -47,6 +47,13 @@ aside ul li:hover {
   background-repeat: no-repeat;
 }
 
+.match-schedule > div {
+  background-image: url('../../src/images/illustration4-removebg-preview.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 1000px) {
   ::-webkit-scrollbar {
     width: 7px;
